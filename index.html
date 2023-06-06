@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prema Ramachandran</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CoffeeShop</title>
+  </head>
+
+  <body>
+    <nav class="container-nav">
+      <img
+        class="logo"
+        src="coffee_masters_logo.png"
+        alt="CoffeeMasters logo"
+      />
+      <li class="nav-item">Coffee Masters</li>
+    </nav>
+
+    <div class="page">
+      <section class="item box">
+        <h2 class="props-of-h2">ITEMS</h2>
+        <ul class="list-of-items-purchased">
+          <li class="items">
+            <div class="item-no">1x</div>
+            <div class="item-name">Cappucino</div>
+            <div class="amount">$6.00</div>
+            <ul class="item-detail">
+              <li class="item-gap">Light Foam</li>
+            </ul>
+          </li>
+
+          <li class="items">
+            <div class="item-no">1x</div>
+            <div class="item-name">Cappucino</div>
+            <div class="amount">$7.90</div>
+            <ul class="item-detail">
+              <li class="item-gap">Almond Milk</li>
+              <li class="item-gap">Double Espresso Shot</li>
+            </ul>
+          </li>
+
+          <li class="items">
+            <div class="item-no">1x</div>
+            <div class="item-name">Croissant</div>
+            <div class="amount">$5.37</div>
+            <ul class="item-detail">
+              <li class="item-gap">Butter</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="payment">
+        <div class="name-box box">
+          <h2 class="props-of-h2">NAME</h2>
+          <div class="input-group">
+            <label class="user-input-label" for="name">Name for order</label>
+            <input type="text" class="user-input" id="name" />
+          </div>
+        </div>
+        <div class="cardpayment-box box">
+          <h2 class="props-of-h2">PAYMENT</h2>
+          <div class="input-group">
+            <label class="user-input-label" for="card-number"
+              >Card Number</label
+            >
+            <input type="text" class="user-input" id="card-number" />
+          </div>
+          <div class="input-group">
+            <label class="user-input-label" for="CCV-number">CCV Number</label>
+            <input type="text" class="user-input short-input" id="CCV-number" />
+          </div>
+        </div>
+      </section>
+
+      <section class="total">
+        <div class="container">
+          <p>Subtotal:</p>
+          <p>$19.27</p>
+        </div>
+        <div class="container">
+          <p>Tax:</p>
+          <p>$0.96</p>
+        </div>
+        <div class="container p-styles">
+          <p>Total:</p>
+          <p>$20.23</p>
+        </div>
+        <button class="button-design" type="button">Place Order</button>
+      </section>
+    </div>
+  </body>
 </html>

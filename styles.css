@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-nav {
+  background-color: #43281c;
+  color: #fbf2c0;
+  display: flex;
+  font-size: 25px;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 20px;
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+} 
+
+.page {
+  display:grid;
+  width:100%;
+  grid-template-areas: 
+  'item Name'
+  'total total';
+  grid-template-columns: 1fr 1fr;
+}
+
+.item {
+  grid-area: item;
+}
+
+.Name {
+  grid-area: Name;
+}
+
+.total {
+  grid-area:total;
+}
+
+.box {
+  background-color:rgb(238,225,213);
+  border-radius: 5px;
+  padding:15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px;
+  }
+
+.props-of-h2{
+  color:rgb(149,90,45);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.list-of-items-purchased {
+  padding:0;
+  margin:0;
+  list-style: none;
+  }
+
+.items {
+  border-bottom: 2px solid #ddb892;
+  display:grid;
+  grid-template-areas: 
+  'item-no item-name amount'
+  'item-no item-detail amount';
+  grid-template-columns: 1fr 8fr 1fr;
+  padding:10px 0;
+  row-gap: 10px;
+}
+
+.items:nth-child(3){
+  border-bottom: none;
+}
+
+.item-no{
+  grid-area: item-no;
+}
+.item-name{
+  grid-area: item-name;
+  font-weight: bold;
+}
+.amount{
+  grid-area: amount;
+  font-weight: bold;
+}
+.item-detail{
+  grid-area: item-detail;
+  list-style: none;
+  color: #b08968;
+  padding:0;
+  margin:0;
+}
+
+.item-gap{
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px #885a2d solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 100%;
+  text-indent: 18px;
+  font-size: 18px;
+  }
+
+.user-input-label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px; 
+}
+
+.short-input {
+ max-width: 200px;
+}
+
+.container{
+  display:flex;
+  justify-content: space-evenly;
+  }
+
+.p-styles{
+  font-weight:bold;
+}
+
+ .button-design{
+  width:100%;
+  max-width:1480px;
+  background-color:rgb(222,185,147);
+  border-radius: 100px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  justify-items:center;
+  align-items:center;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  }  
+  
+
